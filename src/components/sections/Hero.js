@@ -27,7 +27,7 @@ const Hero = () => {
       <div className="section-center hero-center">
         <article className="hero-info">
           <div>
-            <div className="underline"></div>
+            {/* <div className="underline"></div> */}
             <h1>I'm CC</h1>
             <h3>building things for the internet</h3>
             <div className="hero-description">

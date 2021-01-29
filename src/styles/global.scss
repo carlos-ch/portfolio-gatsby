@@ -6,6 +6,7 @@
 @import "services";
 @import "interests";
 @import "projects";
+@import "contact";
 
 /*
 =============== 
@@ -88,8 +89,9 @@ p {
 
 .section-center {
   max-width: 62.5rem;
-  margin: 0px auto;
-  margin-bottom: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+  // margin-bottom: 6rem;
   padding: 0px 2.5rem;
 }
 
