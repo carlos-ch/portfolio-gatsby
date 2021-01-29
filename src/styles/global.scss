@@ -5,6 +5,7 @@
 @import "about";
 @import "services";
 @import "interests";
+@import "projects";
 
 /*
 =============== 
@@ -32,6 +33,7 @@ ul {
 }
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 h1,
