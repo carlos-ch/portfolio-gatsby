@@ -1,13 +1,14 @@
 import React from "react"
-import logo from "../assets/logo.svg"
+import logoWhite from "../assets/logo_white.svg"
 
 const Footer = () => {
   return (
-    <div className="footer">
+    <footer className="footer">
       <div className="footer-center">
-        <img src={logo} alt="footer logo" className="footer-logo" />
+        <img src={logoWhite} alt="footer logo" className="footer-logo" />
+        <small>© 2021 Carlos Chavez</small>
       </div>
-    </div>
+    </footer>
   )
 }
 

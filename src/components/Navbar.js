@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import logo from "../assets/logo.svg"
+import logoBlack from "../assets/logo_black.svg"
 import Sidebar from "./Sidebar"
 
 export const Navbar = () => {
@@ -7,7 +7,7 @@ export const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="nav-center">
-        <img src={logo} alt="logo" />
+        <img src={logoBlack} alt="logo" />
         <button
           className={`toggle-btn ${open ? "open" : ""}`}
           type="button"

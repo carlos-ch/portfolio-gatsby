@@ -8,7 +8,16 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 5rem;
+  height: $navbar-h;
+  background: linear-gradient(
+    180deg,
+    #230b06c2,
+    #0b3c4980,
+    #80a1c1b5,
+    #d9cfc1d6,
+    #eee3abb0,
+    #cc3f0cd6
+  );
   z-index: 200;
   .nav-center {
     display: flex;
@@ -52,7 +61,7 @@
       div {
         width: 2rem;
         height: 0.25rem;
-        background: #fff;
+        background: rgb(180, 75, 36);
         border-radius: 0.625rem;
         transition: all 0.3s ease-in-out;
         position: relative;
@@ -70,8 +79,9 @@
       }
     }
     img {
-      height: 60%;
+      height: 70%;
       margin: 0;
+      border: 5px solid rgba(204, 63, 12, 0.178);
       border-radius: 50%;
     }
   }
