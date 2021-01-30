@@ -4,6 +4,8 @@ import Layout from "../components/Layout"
 import Services from "../components/Services"
 import About from "../components/sections/About"
 import Interests from "../components/sections/Interests"
+import Projects from "../components/sections/Projects"
+import Contact from "../components/sections/Contact"
 
 export default function Home() {
   return (
@@ -13,6 +15,8 @@ export default function Home() {
         <Services></Services>
         <About></About>
         <Interests></Interests>
+        <Projects links={{ links: { github: "github.com" } }}></Projects>
+        <Contact></Contact>
       </Layout>
     </div>
   )

@@ -1,7 +1,38 @@
+@import "variables";
+
 .interests {
+  width: 100%;
+  height: auto;
   &-content {
+    display: grid;
+    gap: $grid-gutter;
+    grid-template-columns: repeat(auto-fit, minmax(auto, 30%));
+    grid-auto-rows: 4rem;
+
     &-item {
-      border: 1px solid blue;
+      text-align: center;
+      padding: 0 1.2em;
+      border: 2px solid rgba(255, 255, 255, 0.383);
+      border-radius: 0.3rem;
+      p {
+        margin: 0;
+      }
     }
   }
 }
+
+// &-content {
+//   display: grid;
+//   grid-gap: 10px;
+//   grid-template-columns: repeat(6, calc(50% - 40px));
+//   grid-template-rows: minmax(150px, 1fr);
+//   overflow-x: scroll;
+//   scroll-snap-type: x proximity;
+//   padding-bottom: calc(0.75 * $grid-gutter);
+//   margin-bottom: calc(-0.25 * $grid-gutter);
+
+//   &-item {
+//     text-align: center;
+//     border: 1px solid blue;
+//   }
+// }

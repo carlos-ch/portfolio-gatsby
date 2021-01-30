@@ -6,19 +6,31 @@ export default [
   {
     id: 1,
     icon: <IoChatboxEllipsesSharp className="service-icon" />,
-    title: "web development",
-    text: `I'm baby meditation tofu chillwave, distillery messenger bag thundercats chicharrones kale chips gochujang. Banh mi direct trade marfa salvia.`,
+    text: `Front End Development`,
   },
   {
     id: 2,
     icon: <BsGear className="service-icon" />,
-    title: "web design",
-    text: `I'm baby meditation tofu chillwave, distillery messenger bag thundercats chicharrones kale chips gochujang. Banh mi direct trade marfa salvia.`,
+    text: `React.js`,
   },
   {
     id: 3,
     icon: <ImMobile className="service-icon" />,
-    title: "app design",
-    text: `I'm baby meditation tofu chillwave, distillery messenger bag thundercats chicharrones kale chips gochujang. Banh mi direct trade marfa salvia.`,
+    text: `Test Driven Development`,
+  },
+  {
+    id: 4,
+    icon: <IoChatboxEllipsesSharp className="service-icon" />,
+    text: `Back End Development`,
+  },
+  {
+    id: 5,
+    icon: <BsGear className="service-icon" />,
+    text: `Firebase`,
+  },
+  {
+    id: 6,
+    icon: <ImMobile className="service-icon" />,
+    text: `Docker`,
   },
 ]
