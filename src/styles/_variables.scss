@@ -1,6 +1,17 @@
+$ff-primary: Helvetica, sans-serif;
 $ff-secondary: Helvetica, sans-serif;
-$clr-grey-1: #333;
-$clr-background: #cc3f0cff;
+$clr-primary-1: #fff;
+$clr-secondary-1: #fffff4;
+$bg-clr-1: #001721;
+$bg-clr-2: #293d48;
+$bg-clr-3: #3e5b6b;
+$gradient-left-tricolor: linear-gradient(
+  270deg,
+  rgba(244, 235, 47, 1) 37%,
+  rgba(0, 245, 255, 1) 39%,
+  rgba(0, 245, 255, 1) 75%,
+  rgba(255, 65, 62, 1) 77%
+);
 
 /* WIDTH & HEIGHT */
 $navbar-h: 5rem;

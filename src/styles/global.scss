@@ -23,8 +23,8 @@ Global Styles
 }
 body {
   font: 100% $ff-secondary;
-  background: $clr-background;
-  color: $clr-grey-1;
+  background: $bg-clr-1;
+  color: $clr-secondary-1;
   line-height: 1.5;
   font-size: 0.875rem;
   margin-top: 5rem;
@@ -41,11 +41,13 @@ h1,
 h2,
 h3,
 h4 {
-  letter-spacing: var(--spacing);
+  // letter-spacing: var(--spacing);
   text-transform: capitalize;
   line-height: 1.25;
   margin-bottom: 0.75rem;
-  font-family: var(--ff-primary);
+  font-family: $ff-primary;
+  color: $clr-primary-1;
+  // font-family: var(--ff-primary);
 }
 h1 {
   font-size: 3rem;
@@ -61,7 +63,7 @@ h4 {
 }
 p {
   margin-bottom: 1.25rem;
-  color: var(--clr-grey-3);
+  // color: var(--clr-grey-3);
 }
 @media screen and (min-width: 800px) {
   h1 {
@@ -99,7 +101,7 @@ p {
   width: 5rem;
   height: 0.25rem;
   margin-bottom: 1.25rem;
-  background: $clr-grey-1;
+  background: $clr-secondary-1;
   margin-left: auto;
   margin-right: auto;
 }

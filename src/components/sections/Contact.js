@@ -15,6 +15,13 @@ const query = graphql`
   }
 `
 
+// const iRef = useRef()
+// const iOnScreen = useOnScreen(iRef)
+// useEffect(() => {
+//   if (sOnScreen) tControls.start({ opacity: 1, y: 0 })
+//   if (iOnScreen) iControls.start({ opacity: 1, x: 0 })
+// }, [tControls, iControls, sOnScreen, iOnScreen])
+
 const Contact = () => {
   const {
     file: {

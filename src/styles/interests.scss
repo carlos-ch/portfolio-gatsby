@@ -4,7 +4,9 @@
   width: 100%;
   height: auto;
   &-content {
-    display: grid;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: $grid-gutter;
     grid-template-columns: repeat(auto-fit, minmax(auto, 30%));
     grid-auto-rows: 4rem;

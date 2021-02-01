@@ -44,6 +44,8 @@
         outline: none;
       }
       &.open {
+        position: fixed;
+        right: 2.5rem;
         div {
           &:first-child {
             transform: rotate(45deg);
@@ -61,7 +63,7 @@
       div {
         width: 2rem;
         height: 0.25rem;
-        background: rgb(180, 75, 36);
+        background: $clr-primary-1;
         border-radius: 0.625rem;
         transition: all 0.3s ease-in-out;
         position: relative;
@@ -86,8 +88,10 @@
     }
   }
   @media screen and (min-width: 800px) {
-    .toggle-btn {
-      display: none;
+    .nav-center {
+      .toggle-btn {
+        display: none;
+      }
     }
   }
 }

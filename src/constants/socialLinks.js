@@ -1,10 +1,13 @@
-import React from "react"
+import React, { useRef } from "react"
+import { motion, useAnimation } from "framer-motion"
 import {
   FaFacebookSquare,
   FaLinkedin,
   FaTwitterSquare,
   FaGithubSquare,
 } from "react-icons/fa"
+import { useEffect } from "react"
+import { useOnScreen } from "../hooks"
 
 const data = [
   {
@@ -29,18 +32,52 @@ const data = [
   },
 ]
 
+const container = {
+  hidden: { opacity: 1, scale: 0 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      delayChildren: 0.3,
+      staggerChildren: 0.2,
+    },
+  },
+}
+
+const item = {
+  hidden: { y: 20, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+  },
+}
+
 const links = data.map(link => {
   return (
-    <li key={link.id}>
+    <motion.li key={link.id} variants={item}>
       <a href={link.url} className="social-link">
         {link.icon}
       </a>
-    </li>
+    </motion.li>
   )
 })
 
 export default ({ styleClass }) => {
+  const ref = useRef()
+  const onScreen = useOnScreen(ref)
+  const animation = useAnimation()
+  useEffect(() => {
+    if (onScreen) animation.start(container)
+  }, [onScreen, animation])
   return (
-    <ul className={`social-links ${styleClass ? styleClass : ""}`}>{links}</ul>
+    <motion.ul
+      ref={ref}
+      variants={container}
+      initial="hidden"
+      animate={onScreen ? "visible" : "hidden"}
+      className={`social-links ${styleClass ? styleClass : ""}`}
+    >
+      {links}
+    </motion.ul>
   )
 }

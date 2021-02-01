@@ -4,6 +4,7 @@ import Sidebar from "./Sidebar"
 
 export const Navbar = () => {
   const [open, setOpen] = useState(false)
+
   return (
     <nav className="navbar">
       <div className="nav-center">

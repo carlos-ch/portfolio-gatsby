@@ -2,9 +2,9 @@ export default [
   {
     id: 1,
     image: "hero-img.svg",
-    title: `App for efficiency`,
-    text: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque inventore quos voluptnihil ipsum, deleniti exercitationem obcaecati ducimus qui nostrum vel voluptatum. Molestias!`,
-    tags: ["React.js", "Strapi", "Express.js", "Reedux"],
+    title: `Mainteny website`,
+    text: `Early in January I was part of a small team tasked with rebranding and setting up the homepage for Mainteny. The result was a clean, fully responsive webpage Mainteny could manage via HS.`,
+    tags: ["React.js", "HubSpot", "Web development"],
     links: "",
   },
   {
