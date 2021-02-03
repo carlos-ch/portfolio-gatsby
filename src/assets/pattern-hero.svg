@@ -1,0 +1,20 @@
+<svg width="75" height="75" viewBox="0 0 350 350" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:fi="http://pattern.flaticon.com/">
+  <rect width="100%" height="100%" opacity=".0" fill="#ff2322"/>
+  <defs>
+    <path d="M347.785.227h-65.12l-32 48h-30.88l-32-48h-65.12l-32 48h-48L0 112.227l32 48-32 48 32 48-32 48 42.664 64h65.129l32-48h30.871l32 48h65.129l32-48h48l42.664-64-32-48 32-48-32-48 32-48zm-48 32h30.871l21.336 32-21.336 32h-30.87l-21.329-32zm0 160l-21.328-32 21.328-32h30.871l21.336 32-21.336 32zm-80 48l-21.328-32 21.328-32h30.871l21.328 32-21.328 32zm-49.12 48h-30.88l-21.328-32 21.328-32h30.871l21.328 32-10.664 16zm-110.88-48l-21.336-32 21.336-32h30.871l21.328 32-21.328 32zm110.88-112l21.327 32-21.328 32h-30.879l-21.328-32 21.328-32zm49.12-48h30.871l21.328 32-21.328 32h-30.87l-21.329-32zm-80-48h30.871l21.336 32-21.328 32h-30.879l-21.328-32zm-80 48h30.871l21.328 32-21.328 32h-30.87l-21.337-32zm30.88 256h-30.88l-21.336-32 21.336-32h30.871l21.328 32zm160 0h-30.88l-21.336-32 21.328-32h30.871l21.329 32zm80-48h-30.88l-21.328-32 21.328-32h30.871l21.336 32zm0 0" transform="rotate(-45 260.594 464.396) scale(1.02994)" id="a" fill="#faffff" opacity=".15"/>
+  </defs>
+  <g fi:class="KUsePattern">
+    <pattern id="b" width="350" height="350" patternUnits="userSpaceOnUse">
+      <use xlink:href="#a" x="-350" y="-350"/>
+      <use xlink:href="#a" y="-350"/>
+      <use xlink:href="#a" x="350" y="-350"/>
+      <use xlink:href="#a" x="-350"/>
+      <use xlink:href="#a"/>
+      <use xlink:href="#a" x="350"/>
+      <use xlink:href="#a" x="-350" y="350"/>
+      <use xlink:href="#a" y="350"/>
+      <use xlink:href="#a" x="350" y="350"/>
+    </pattern>
+    <rect width="100%" height="100%" fill="url(#b)"/>
+  </g>
+</svg>

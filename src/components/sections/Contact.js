@@ -49,7 +49,6 @@ const Contact = () => {
             <SocialLinks />
           </div>
         </div>
-        <div className="contact-links"></div>
       </div>
     </section>
   )

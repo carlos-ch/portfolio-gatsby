@@ -27,32 +27,34 @@ const Hero = () => {
   return (
     <section id="hero" className="hero">
       <div className="section-center hero-center">
-        <article className="hero-info">
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={hControls}>
-            <h1>
-              HI, <br />
-              I'm Carlos
-            </h1>
-            <h3>developer • maker • musician</h3>
-            <motion.div
-              className="hero-description"
-              initial={{ opacity: 0, y: 20 }}
-              animate={hControls}
-            >
-              <p>Freelance Full stack web developer based in Oslo</p>
-            </motion.div>
-            <Link to="#contact" className="btn">
-              Let's build something awesome!
-            </Link>
-            <motion.div
-              className="hero-social"
-              initial={{ opacity: 0, x: 20 }}
-              animate={sControls}
-            >
-              <SocialLinks></SocialLinks>
-            </motion.div>
+        <motion.article
+          initial={{ opacity: 0, y: 20 }}
+          animate={hControls}
+          className="hero-info"
+        >
+          <h1>
+            HI, <br />
+            I'm Carlos
+          </h1>
+          <h3>developer • maker • musician</h3>
+          <motion.div
+            className="hero-description"
+            initial={{ opacity: 0, y: 20 }}
+            animate={hControls}
+          >
+            <p>Freelance Full stack web developer based in Oslo</p>
           </motion.div>
-        </article>
+          <Link to="#contact" className="btn">
+            Let's build something awesome!
+          </Link>
+          <motion.div
+            className="hero-social"
+            initial={{ opacity: 0, x: 20 }}
+            animate={sControls}
+          >
+            <SocialLinks></SocialLinks>
+          </motion.div>
+        </motion.article>
       </div>
     </section>
   )

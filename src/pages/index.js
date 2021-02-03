@@ -12,7 +12,7 @@ export default function Home() {
     <div>
       <Layout>
         <Hero></Hero>
-        <Services></Services>
+        {/* <Services></Services> */}
         <About></About>
         <Interests></Interests>
         <Projects links={{ links: { github: "github.com" } }}></Projects>

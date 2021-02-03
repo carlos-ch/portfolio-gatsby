@@ -1,16 +1,25 @@
-$ff-primary: Helvetica, sans-serif;
+$ff-primary: "Karla", sans-serif;
 $ff-secondary: Helvetica, sans-serif;
 $clr-primary-1: #fff;
 $clr-secondary-1: #fffff4;
+$clr-secondary-3: darkgray;
 $bg-clr-1: #001721;
 $bg-clr-2: #293d48;
 $bg-clr-3: #3e5b6b;
+$bg-clr-4: #04080a;
+
 $gradient-left-tricolor: linear-gradient(
   270deg,
   rgba(244, 235, 47, 1) 37%,
   rgba(0, 245, 255, 1) 39%,
   rgba(0, 245, 255, 1) 75%,
   rgba(255, 65, 62, 1) 77%
+);
+$gradient-bottom-right-bg: linear-gradient(
+  135deg,
+  rgba(255, 255, 244, 1) 0%,
+  rgba(0, 23, 33, 1) 43%,
+  rgba(4, 8, 10, 1) 84%
 );
 
 /* WIDTH & HEIGHT */

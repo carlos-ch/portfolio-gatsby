@@ -1,12 +1,12 @@
 import React, { useRef } from "react"
-import { motion, useAnimation } from "framer-motion"
+import { motion } from "framer-motion"
 import {
   FaFacebookSquare,
   FaLinkedin,
   FaTwitterSquare,
   FaGithubSquare,
 } from "react-icons/fa"
-import { useEffect } from "react"
+// import { useEffect } from "react"
 import { useOnScreen } from "../hooks"
 
 const data = [
@@ -33,7 +33,7 @@ const data = [
 ]
 
 const container = {
-  hidden: { opacity: 1, scale: 0 },
+  // hidden: { opacity: 1, scale: 0 },
   visible: {
     opacity: 1,
     scale: 1,
@@ -65,10 +65,10 @@ const links = data.map(link => {
 export default ({ styleClass }) => {
   const ref = useRef()
   const onScreen = useOnScreen(ref)
-  const animation = useAnimation()
-  useEffect(() => {
-    if (onScreen) animation.start(container)
-  }, [onScreen, animation])
+  // const animation = useAnimation()
+  // useEffect(() => {
+  //   if (onScreen) animation.start(container)
+  // }, [onScreen, animation])
   return (
     <motion.ul
       ref={ref}

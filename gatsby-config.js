@@ -23,6 +23,13 @@ module.exports = {
         path: `${__dirname}/src/assets/`,
       },
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`Karla\:300,400,400i,700`],
+        display: "swap",
+      },
+    },
     // {
     //   resolve: `gatsby-source-strapi`,
     //   options: {

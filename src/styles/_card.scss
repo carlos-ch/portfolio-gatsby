@@ -37,4 +37,8 @@
     box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 2.5rem;
     transition: all 0.3s ease-out 0s;
   }
+  @media (min-width: 800px) {
+    width: 50%;
+    margin-top: 0.8rem;
+  }
 }

@@ -9,15 +9,7 @@
   left: 0;
   width: 100%;
   height: $navbar-h;
-  background: linear-gradient(
-    180deg,
-    #230b06c2,
-    #0b3c4980,
-    #80a1c1b5,
-    #d9cfc1d6,
-    #eee3abb0,
-    #cc3f0cd6
-  );
+  background: $gradient-bottom-right-bg;
   z-index: 200;
   .nav-center {
     display: flex;
@@ -83,7 +75,7 @@
     img {
       height: 70%;
       margin: 0;
-      border: 5px solid rgba(204, 63, 12, 0.178);
+      border: 5px solid $bg-clr-3;
       border-radius: 50%;
     }
   }
