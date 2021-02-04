@@ -84,6 +84,20 @@
       .toggle-btn {
         display: none;
       }
+      .no-sidebar {
+        display: flex;
+        // gap: 4vw;
+        margin: 0 2vw -1rem 0;
+        text-transform: capitalize;
+        li {
+          padding: 0 1rem;
+          margin: 0;
+          &:hover {
+            background-color: $bg-clr-2;
+            border-radius: 3px;
+          }
+        }
+      }
     }
   }
 }

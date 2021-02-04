@@ -1,7 +1,7 @@
 export default {
   id: 1,
   desc:
-    "Full Stack Developer based in Oslo but with roots in South America.\nWith a background in classical music I now follow my passion for coding  and making.\nI enjoy building functional and clean websites and applications. I'm all about learning  new topics and adventuring in exiting projects.\nLast year I graduated from School of Applied Technology in Stockholm, a career program where only 30 of the 1500 applicants had the opportunity to go through training and be hired right on spot.",
+    "Full Stack Developer based in Oslo but with roots in South America.\nWith a background in classical music I now follow my passion for coding  and making.\nI enjoy building functional and clean websites and applications. I'm all about learning  new topics and adventuring into exiting projects.\nLast year I graduated from School of Applied Technology in Stockholm, a career program where only 30 of the 1500 applicants had the opportunity to go through training and be hired right on spot.",
   published_at: "2021-02-02T20:10:16.990Z",
   created_at: "2021-02-02T20:10:14.477Z",
   updated_at: "2021-02-02T20:10:17.015Z",

@@ -42,7 +42,10 @@ export default ({ styleClass, open, setOpen }) => {
     <ul className={`page-links ${styleClass ? styleClass : ""}`}>
       {data.map(link => {
         return (
-          <li key={link.id} onClick={() => setOpen(!open)}>
+          <li
+            key={link.id}
+            onClick={styleClass !== "no-sidebar" ? () => setOpen(!open) : null}
+          >
             <Link to={link.url}>{link.text}</Link>
           </li>
         )

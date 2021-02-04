@@ -1,5 +1,5 @@
 import React from "react"
-import interests from "../../constants/interests"
+import interests from "../../assets/db/interests"
 import {
   FaGitSquare,
   FaJsSquare,
@@ -30,7 +30,7 @@ const Interests = () => {
           {interests.map(interest => {
             return (
               <div className="interests-content-item">
-                <p>{interest.text}</p>
+                <p>{interest.name}</p>
               </div>
             )
           })}
