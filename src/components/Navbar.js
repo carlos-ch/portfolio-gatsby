@@ -2,25 +2,31 @@ import React, { useState, useEffect } from "react"
 import logoBlack from "../assets/logo_black.svg"
 import Sidebar from "./Sidebar"
 import PageLinks from "../constants/links"
+import Media from "react-media"
 
 export const Navbar = () => {
   const [open, setOpen] = useState(false)
-  const [isDesktop, setDesktop] = useState(window.innerWidth > 800)
+  // const [isDesktop, setDesktop] = useState(true)
 
-  const updateMedia = () => {
-    setDesktop(window.innerWidth > 800)
-  }
+  // const updateMedia = () => {
+  //   setDesktop(window.innerWidth > 800)
+  // }
 
-  useEffect(() => {
-    window.addEventListener("resize", updateMedia)
-    return () => window.removeEventListener("resize", updateMedia)
-  })
+  // useEffect(() => {
+  //   window.addEventListener("resize", updateMedia)
+  //   return () => window.removeEventListener("resize", updateMedia)
+  // })
 
   return (
     <nav className="navbar">
       <div className="nav-center">
         <img src={logoBlack} alt="logo" />
-        {isDesktop ? <PageLinks styleClass="no-sidebar" /> : null}
+        {/* {isDesktop ? : null} */}
+        <Media queries={{ small: { maxWidth: 800 } }}>
+          {matches =>
+            matches.small ? null : <PageLinks styleClass="no-sidebar" />
+          }
+        </Media>
         <button
           className={`toggle-btn ${open ? "open" : ""}`}
           type="button"

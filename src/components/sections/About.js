@@ -18,7 +18,6 @@ const query = graphql`
 `
 
 const About = ({ data }) => {
-  console.log(data)
   const text = data.desc
   const newText = text.split("\n").map(str => <p>{str}</p>)
 
