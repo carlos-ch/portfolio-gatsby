@@ -1,21 +1,40 @@
 import React from "react"
 import Image from "gatsby-image"
+import { FaGithubSquare, FaExternalLinkAlt } from "react-icons/fa"
 
-const Card = ({ data, image }) => {
+const Card = ({ data }) => {
+  const {
+    thumbnail: {
+      childImageSharp: { fluid },
+    },
+  } = data
   return (
     <div className="card">
       <div className="details">
-        <h4 className="title">{data.title}</h4>
-        <p className="description">{data.text}</p>
+        <h4 className="title">{data.name}</h4>
+        <p className="description">{data.description}</p>
         <div className="tags">
-          {data.tags.map(tag => (
-            <span className="project-tag">{tag}</span>
+          {data.tech_stack.map(tag => (
+            <span key={tag.id} className="project-tag">
+              {tag.name}
+            </span>
           ))}
         </div>
-        <div className="links">{data.links}</div>
+        <div className="links">
+          {data.github && (
+            <a href={data.github}>
+              <FaGithubSquare />
+            </a>
+          )}
+          {data.url && (
+            <a href={data.github}>
+              <FaExternalLinkAlt />
+            </a>
+          )}
+        </div>
       </div>
       <div className="thumbnail-wrapper">
-        <Image fluid={image} className="thumbnail" />
+        <Image fluid={fluid} className="thumbnail" />
       </div>
     </div>
   )

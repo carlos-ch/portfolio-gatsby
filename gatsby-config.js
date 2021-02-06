@@ -3,6 +3,9 @@
  *
  * See: https://www.gatsbyjs.com/docs/gatsby-config/
  */
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
 
 module.exports = {
   /* Your site config here */
@@ -30,14 +33,15 @@ module.exports = {
         display: "swap",
       },
     },
-    // {
-    //   resolve: `gatsby-source-strapi`,
-    //   options: {
-    //     apiURL: `http://localhost:1337`,
-    //     queryLimit: 1000, // Default to 100
-    //     // contentTypes: [`article`, `user`],
-    //     contentTypes: [`jobs`],
-    //   },
-    // },
+    {
+      resolve: `gatsby-source-strapi`,
+      options: {
+        apiURL: process.env.API_URL || `http://localhost:1337`,
+        queryLimit: 1000, // Default to 100
+        // contentTypes: [`article`, `user`],
+        contentTypes: [`projects`, `interests`],
+        singleTypes: [`about`, `contact`],
+      },
+    },
   ],
 }

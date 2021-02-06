@@ -29,14 +29,6 @@ const data = [
   },
 ]
 
-// const tempLinks = data.map(link => {
-//   return (
-//     <li key={link.id} onClick={() => setOpen(!open)}>
-//       <Link to={link.url}>{link.text}</Link>
-//     </li>
-//   )
-// })
-
 export default ({ styleClass, open, setOpen }) => {
   return (
     <ul className={`page-links ${styleClass ? styleClass : ""}`}>

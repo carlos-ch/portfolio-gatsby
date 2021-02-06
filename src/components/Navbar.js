@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import logoBlack from "../assets/logo_black.svg"
 import Sidebar from "./Sidebar"
 import PageLinks from "../constants/links"
@@ -21,7 +21,6 @@ export const Navbar = () => {
     <nav className="navbar">
       <div className="nav-center">
         <img src={logoBlack} alt="logo" />
-        {/* {isDesktop ? : null} */}
         <Media queries={{ small: { maxWidth: 800 } }}>
           {matches =>
             matches.small ? null : <PageLinks styleClass="no-sidebar" />

@@ -1,19 +1,6 @@
 import React from "react"
 import Image from "gatsby-image"
-import { graphql, useStaticQuery } from "gatsby"
 import SocialLinks from "../../constants/socialLinks"
-
-const query = graphql`
-  {
-    file(relativePath: { eq: "avatar.jpg" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`
 
 // const iRef = useRef()
 // const iOnScreen = useOnScreen(iRef)
@@ -22,31 +9,35 @@ const query = graphql`
 //   if (iOnScreen) iControls.start({ opacity: 1, x: 0 })
 // }, [tControls, iControls, sOnScreen, iOnScreen])
 
-const Contact = () => {
+const Contact = ({ data }) => {
   const {
-    file: {
+    avatar: {
       childImageSharp: { fluid },
     },
-  } = useStaticQuery(query)
+    name,
+    email,
+    message,
+    social,
+  } = data
 
   return (
     <section id="contact" className="contact">
       <div className="section-center contact-center">
         <h3 className="contact-title">Contact me</h3>
-        <p>Consectetur adipisicing elit. Eligendi, eo!</p>
+        <p>{message}</p>
         <div className="contact-profile">
           <div className="avatar">
             <Image fluid={fluid} />
           </div>
           <div className="details">
-            <strong>Carlos Chavez</strong>
+            <strong>{name}</strong>
             <br />
-            <a href="mailto:email@email.com">
-              <span>{`email@email.com`}</span>
+            <a href={"mailto:" + email}>
+              <span>{email}</span>
             </a>
           </div>
           <div className="contact-social-links">
-            <SocialLinks />
+            <SocialLinks data={social} />
           </div>
         </div>
       </div>

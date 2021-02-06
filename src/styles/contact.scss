@@ -24,6 +24,7 @@
     margin-bottom: 2rem;
   }
   .avatar {
+    justify-self: center;
     align-self: center;
     width: 100%;
     max-width: 8rem;
@@ -49,6 +50,7 @@
     }
     .avatar {
       grid-area: a;
+      margin-bottom: 0;
     }
     .details {
       grid-area: b;

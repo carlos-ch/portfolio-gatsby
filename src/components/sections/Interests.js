@@ -1,5 +1,4 @@
 import React from "react"
-import interests from "../../assets/db/interests"
 import {
   FaGitSquare,
   FaJsSquare,
@@ -21,15 +20,15 @@ import {
   SiNextDotJs,
 } from "react-icons/si"
 
-const Interests = () => {
+const Interests = ({ data }) => {
   return (
     <section className="interests">
       <div className="section-center interests-center">
         <h3 className="interests-title">Interests {"&"} expertise</h3>
         <div className="interests-content">
-          {interests.map(interest => {
+          {data.map(interest => {
             return (
-              <div className="interests-content-item">
+              <div key={interest.id} className="interests-content-item">
                 <p>{interest.name}</p>
               </div>
             )

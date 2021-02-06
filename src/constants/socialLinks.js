@@ -9,29 +9,14 @@ import {
 // import { useEffect } from "react"
 import { useOnScreen } from "../hooks"
 
-const data = [
-  {
-    id: 4,
-    icon: <FaGithubSquare className="social-icon"></FaGithubSquare>,
-    url: "github.com",
-  },
-  {
-    id: 2,
-    icon: <FaLinkedin className="social-icon"></FaLinkedin>,
-    url: "linkedin.com",
-  },
-  {
-    id: 3,
-    icon: <FaTwitterSquare className="social-icon"></FaTwitterSquare>,
-    url: "twitter.com",
-  },
-  {
-    id: 1,
-    icon: <FaFacebookSquare className="social-icon"></FaFacebookSquare>,
-    url: "facebook.com",
-  },
-]
+const iconList = {
+  github: <FaGithubSquare className="social-icon"></FaGithubSquare>,
+  linkedin: <FaLinkedin className="social-icon"></FaLinkedin>,
+  twitter: <FaTwitterSquare className="social-icon"></FaTwitterSquare>,
+  facebook: <FaFacebookSquare className="social-icon"></FaFacebookSquare>,
+}
 
+/*  animation variants */
 const container = {
   // hidden: { opacity: 1, scale: 0 },
   visible: {
@@ -52,23 +37,22 @@ const item = {
   },
 }
 
-const links = data.map(link => {
-  return (
-    <motion.li key={link.id} variants={item}>
-      <a href={link.url} className="social-link">
-        {link.icon}
-      </a>
-    </motion.li>
-  )
-})
-
-export default ({ styleClass }) => {
+export default ({ styleClass, data }) => {
   const ref = useRef()
   const onScreen = useOnScreen(ref)
   // const animation = useAnimation()
   // useEffect(() => {
   //   if (onScreen) animation.start(container)
   // }, [onScreen, animation])
+  const links = data.map(link => {
+    return (
+      <motion.li key={link.id} variants={item}>
+        <a href={link.url} className="social-link">
+          {iconList[link.name]}
+        </a>
+      </motion.li>
+    )
+  })
   return (
     <motion.ul
       ref={ref}

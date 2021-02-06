@@ -3,9 +3,8 @@ import { Link } from "gatsby"
 import SocialLinks from "../../constants/socialLinks"
 
 import { motion, useAnimation } from "framer-motion"
-// import { useOnScreen } from "../../hooks/"
 
-const Hero = () => {
+const Hero = ({ social }) => {
   const hControls = useAnimation()
   const tControls = useAnimation()
   const sControls = useAnimation()
@@ -13,11 +12,6 @@ const Hero = () => {
   useEffect(() => {
     async function loadAnimation() {
       await hControls.start({ opacity: 1, y: 0 })
-      // await hControls.start({
-      //   opacity: 1,
-      //   y: 0,
-      //   transition: { delay: 0.4 },
-      // })
       await tControls.start({ opacity: 1, x: 0 })
       await sControls.start({ opacity: 1, x: 0 })
     }
@@ -52,7 +46,7 @@ const Hero = () => {
             initial={{ opacity: 0, x: 20 }}
             animate={sControls}
           >
-            <SocialLinks></SocialLinks>
+            <SocialLinks data={social}></SocialLinks>
           </motion.div>
         </motion.article>
       </div>

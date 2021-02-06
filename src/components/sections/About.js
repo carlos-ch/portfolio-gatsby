@@ -1,25 +1,16 @@
 import React, { useRef, useEffect } from "react"
-import { graphql, useStaticQuery } from "gatsby"
 import { motion, useAnimation } from "framer-motion"
 import { useOnScreen } from "../../hooks/"
-import about from "../../assets/db/about"
 import Image from "gatsby-image"
-
-const query = graphql`
-  {
-    file(relativePath: { eq: "hero-img.jpg" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`
 
 const About = ({ data }) => {
   const text = data.desc
   const newText = text.split("\n").map(str => <p>{str}</p>)
+  const {
+    image: {
+      childImageSharp: { fluid },
+    },
+  } = data
 
   const tControls = useAnimation()
   const iControls = useAnimation()
@@ -27,12 +18,6 @@ const About = ({ data }) => {
   const tOnScreen = useOnScreen(tRef)
   const iRef = useRef()
   const iOnScreen = useOnScreen(iRef)
-
-  const {
-    file: {
-      childImageSharp: { fluid },
-    },
-  } = useStaticQuery(query)
 
   useEffect(() => {
     if (tOnScreen) tControls.start({ opacity: 1, y: 0 })
