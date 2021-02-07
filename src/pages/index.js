@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
+import mockupData from "../constants/mockup"
 
 import Hero from "../components/sections/Hero"
 import Layout from "../components/Layout"
@@ -8,13 +9,13 @@ import Interests from "../components/sections/Interests"
 import Projects from "../components/sections/Projects"
 import Contact from "../components/sections/Contact"
 
-export default function Home({ data }) {
+export default function Home() {
   const {
     allStrapiProjects,
     allStrapiAbout,
     allStrapiContact,
     allStrapiInterests,
-  } = data
+  } = mockupData
   return (
     <div>
       <Layout>
@@ -31,65 +32,65 @@ export default function Home({ data }) {
   )
 }
 
-export const query = graphql`
-  {
-    allStrapiProjects(sort: { order: DESC, fields: id }) {
-      nodes {
-        tech_stack {
-          name
-          id
-        }
-        github
-        description
-        name
-        url
-        thumbnail {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-        id
-      }
-    }
-    allStrapiAbout {
-      nodes {
-        desc
-        image {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-      }
-    }
-    allStrapiInterests {
-      nodes {
-        id
-        name
-      }
-    }
-    allStrapiContact {
-      nodes {
-        id
-        email
-        name
-        message
-        social {
-          id
-          name
-          url
-        }
-        avatar {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-      }
-    }
-  }
-`
+// export const query = graphql`
+//   {
+//     allStrapiProjects(sort: { order: DESC, fields: id }) {
+//       nodes {
+//         tech_stack {
+//           name
+//           id
+//         }
+//         github
+//         description
+//         name
+//         url
+//         thumbnail {
+//           childImageSharp {
+//             fluid {
+//               ...GatsbyImageSharpFluid
+//             }
+//           }
+//         }
+//         id
+//       }
+//     }
+//     allStrapiAbout {
+//       nodes {
+//         desc
+//         image {
+//           childImageSharp {
+//             fluid {
+//               ...GatsbyImageSharpFluid
+//             }
+//           }
+//         }
+//       }
+//     }
+//     allStrapiInterests {
+//       nodes {
+//         id
+//         name
+//       }
+//     }
+//     allStrapiContact {
+//       nodes {
+//         id
+//         email
+//         name
+//         message
+//         social {
+//           id
+//           name
+//           url
+//         }
+//         avatar {
+//           childImageSharp {
+//             fluid {
+//               ...GatsbyImageSharpFluid
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// `

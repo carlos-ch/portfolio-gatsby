@@ -30,15 +30,15 @@ module.exports = {
         display: "swap",
       },
     },
-    {
-      resolve: `gatsby-source-strapi`,
-      options: {
-        apiURL: `http://localhost:1337`,
-        queryLimit: 1000, // Default to 100
-        // contentTypes: [`article`, `user`],
-        contentTypes: [`projects`, `interests`],
-        singleTypes: [`about`, `contact`],
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-strapi`,
+    //   options: {
+    //     apiURL: `http://localhost:1337`,
+    //     queryLimit: 1000, // Default to 100
+    //     // contentTypes: [`article`, `user`],
+    //     contentTypes: [`projects`, `interests`],
+    //     singleTypes: [`about`, `contact`],
+    //   },
+    // },
   ],
 }
