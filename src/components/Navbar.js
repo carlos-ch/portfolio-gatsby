@@ -4,7 +4,7 @@ import Sidebar from "./Sidebar"
 import PageLinks from "../constants/links"
 import Media from "react-media"
 
-export const Navbar = () => {
+const Navbar = () => {
   const [open, setOpen] = useState(false)
   // const [isDesktop, setDesktop] = useState(true)
 
@@ -40,5 +40,7 @@ export const Navbar = () => {
     </nav>
   )
 }
+export default Navbar
+
 /* Check width of viewport
  https://stackoverflow.com/questions/46586165/react-conditionally-render-based-on-viewport-size */
