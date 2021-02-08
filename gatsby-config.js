@@ -9,6 +9,14 @@ require("dotenv").config({
 
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    title: "CC.'s Portfolio",
+    // titleTemplate: "%s · The Real Hero",
+    description: "Welcome to CC.'s Website:",
+    author: "@carlos-ch",
+    siteUrl: "https://carlosdev.vercel.app", // No trailing slash allowed!
+    twitterUsername: "@CarloselChavez",
+  },
   plugins: [
     `gatsby-plugin-sass`,
     {
@@ -19,6 +27,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

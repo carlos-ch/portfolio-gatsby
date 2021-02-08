@@ -7,6 +7,7 @@ import About from "../components/sections/About"
 import Interests from "../components/sections/Interests"
 import Projects from "../components/sections/Projects"
 import Contact from "../components/sections/Contact"
+import SEO from "../components/seo"
 
 export default function Home({ data }) {
   const {
@@ -18,6 +19,10 @@ export default function Home({ data }) {
   return (
     <div>
       <Layout>
+        <SEO
+          title="Home"
+          description="Personal portfolio with projects and contact info"
+        />
         <Hero social={allStrapiContact.nodes[0].social}></Hero>
         <About data={allStrapiAbout.nodes[0]}></About>
         <Interests data={allStrapiInterests.nodes}></Interests>
