@@ -62,7 +62,7 @@ The next step for this project is to connect it to a blogging platforms or even 
 
 ## Author
 
-Carlos Chavez - [website](https://carlosdev.vercel.app/)
+Carlos Chavez - [website](https://carloschavez.cc)
 
 ## License
 

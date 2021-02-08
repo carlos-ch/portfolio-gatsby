@@ -14,7 +14,8 @@ module.exports = {
     // titleTemplate: "%s · The Real Hero",
     description: "Welcome to CC.'s Website:",
     author: "@carlos-ch",
-    siteUrl: "https://carlosdev.vercel.app", // No trailing slash allowed!
+    siteUrl: "https://carloschavez.cc", // No trailing slash allowed!
+    // siteUrl: "https://carlosdev.vercel.app",
     twitterUsername: "@CarloselChavez",
   },
   plugins: [
