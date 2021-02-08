@@ -27,7 +27,7 @@ const Card = ({ data }) => {
             </a>
           )}
           {data.url && (
-            <a href={data.github}>
+            <a href={data.url}>
               <FaExternalLinkAlt />
             </a>
           )}

@@ -1,7 +1,7 @@
 import React from "react"
 import Card from "../Card"
 
-const Projects = ({ links, projectsData }) => {
+const Projects = ({ cta, projectsData }) => {
   return (
     <section id="projects" className="projects">
       <div className="section-center projects-center">
@@ -12,7 +12,7 @@ const Projects = ({ links, projectsData }) => {
           ))}
         </div>
       </div>
-      <a href={links.links.github} className="projects-cta-btn">
+      <a href={cta} className="projects-cta-btn">
         <button className="cta-btn">Check out more on GitHub</button>
       </a>
     </section>

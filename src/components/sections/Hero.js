@@ -27,7 +27,7 @@ const Hero = ({ social }) => {
           className="hero-info"
         >
           <h1>
-            HI, <br />
+            Hola, <br />
             I'm Carlos
           </h1>
           <h3>developer • maker • musician</h3>

@@ -33,16 +33,23 @@
   }
   .links {
     display: flex;
-    gap: 1.5rem;
+    // gap: 1.5rem;
     margin-top: 0.7em;
     font-size: 150%;
     a {
+      margin-right: 0.7em;
       transition: all 0.3s ease-out;
       &:hover {
         // font-weight: bolder;
         color: $clr-secondary-3;
         transform: translate3d(0px, -0.125rem, 0px);
       }
+    }
+    @supports (gap: 1.5rem) {
+      a {
+        margin-right: 0;
+      }
+      gap: 1.5rem;
     }
   }
   .thumbnail-wrapper {

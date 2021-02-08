@@ -16,6 +16,9 @@ export default function Home({ data }) {
     allStrapiContact,
     allStrapiInterests,
   } = data
+  const githubLink = allStrapiContact.nodes[0].social.filter(
+    link => link.name === "github"
+  )
   return (
     <div>
       <Layout>
@@ -28,7 +31,7 @@ export default function Home({ data }) {
         <Interests data={allStrapiInterests.nodes}></Interests>
         <Projects
           projectsData={allStrapiProjects.nodes}
-          links={{ links: { github: "github.com" } }}
+          cta={githubLink[0].url}
         ></Projects>
         <Contact data={allStrapiContact.nodes[0]}></Contact>
       </Layout>
