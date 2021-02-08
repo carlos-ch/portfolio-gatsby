@@ -1,0 +1,27 @@
+.notfound {
+  // height: 100%;
+  .error-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    max-width: 62.5rem;
+    margin: 0 auto;
+    padding: 0 2.5rem;
+    height: calc(100vh - (#{$h-footer} + #{$mt-footer} + #{$h-navbar}));
+    // background: ${({ theme }) => theme.colors.background};
+  }
+  h4 {
+    text-transform: none;
+    margin-bottom: 2em;
+  }
+  .btn {
+    padding: 0.4em 0.6rem;
+    border-radius: 4px;
+    background-color: $bg-clr-2;
+    &:hover {
+      background-color: $bg-clr-3;
+    }
+  }
+}

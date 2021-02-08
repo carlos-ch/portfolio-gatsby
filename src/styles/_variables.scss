@@ -2,6 +2,7 @@ $ff-primary: "Karla", sans-serif;
 $ff-secondary: Helvetica, sans-serif;
 $clr-primary-1: #fff;
 $clr-secondary-1: #fffff4;
+$clr-secondary-2: #ddddd4;
 $clr-secondary-3: darkgray;
 $bg-clr-1: #001721;
 $bg-clr-2: #293d48;
@@ -23,7 +24,11 @@ $gradient-bottom-right-bg: linear-gradient(
 );
 
 /* WIDTH & HEIGHT */
-$navbar-h: 5rem;
+$h-navbar: 5rem;
+$h-footer: 8rem;
+
+/* MARGIN & PADDING */
+$mt-footer: 10rem;
 
 /* GRID */
 $grid-gutter: 20px;

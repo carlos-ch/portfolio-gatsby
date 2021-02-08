@@ -1,10 +1,10 @@
 .hero {
   width: 100%;
-  height: calc(100vh - #{$navbar-h});
+  height: calc(100vh - #{$h-navbar});
   background-color: $bg-clr-1;
-  background-image: url(../assets/pattern-hero.svg), $gradient-bottom-right-bg;
+  background-image: url(../assets/hero-noise.png), $gradient-bottom-right-bg;
   // background: linear-gradient(244deg, #5bf4cd, #f12e14);
-  background-size: 0.5em 0.5em, 200% 400%;
+  background-size: 50% 50%, 200% 400%;
   background-repeat: space;
   // background-position: center;
   -webkit-animation: AnimationName 19s ease infinite;
@@ -19,16 +19,18 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    // padding-top: $navbar-h;
+    // padding-top: $h-navbar;
     margin-bottom: 6rem;
   }
   &-info {
     h3 {
-      background: $gradient-left-tricolor;
+      // background: $gradient-left-tricolor;
+      background: $clr-secondary-2;
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       text-transform: none;
+      mix-blend-mode: color-dodge;
     }
   }
   &-description {
