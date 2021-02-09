@@ -47,7 +47,12 @@ export default ({ styleClass, data }) => {
   const links = data.map(link => {
     return (
       <motion.li key={link.id} variants={item}>
-        <a href={link.url} className="social-link">
+        <a
+          href={link.url}
+          className="social-link"
+          target="_blank"
+          rel="noreferrer"
+        >
           {iconList[link.name]}
         </a>
       </motion.li>

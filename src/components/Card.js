@@ -22,12 +22,12 @@ const Card = ({ data }) => {
         </div>
         <div className="links">
           {data.github && (
-            <a href={data.github}>
+            <a href={data.github} target="_blank" rel="noreferrer">
               <FaGithubSquare />
             </a>
           )}
           {data.url && (
-            <a href={data.url}>
+            <a href={data.url} target="_blank" rel="noreferrer">
               <FaExternalLinkAlt />
             </a>
           )}
