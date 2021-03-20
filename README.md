@@ -2,13 +2,13 @@
   Portfolio Gatsby
 </h1>
 
-A personal portfolio use as my personal website.
+A personal portfolio used as my personal website.
 
 ## Description
 
-The idea behind this portfolio was to have a home page for people interested in my work. This portfolio provides:
+The idea behind this portfolio was to have a homepage for people interested in my work. This portfolio provides:
 
-- professional/personal information about me
+- professional & personal information about me
 - showcase of past and current (maybe also future) projects
 - contact information
 
@@ -19,11 +19,11 @@ Since the idea was to future-proof this project and make it as easily managable 
 - Gatsby (SSG)
 - Strapi (CMS)
 - PostgreSQL (database)
-- Cloudinary (image databse)
+- Cloudinary (image database)
 
 ### Roadmap
 
-This is the first iteration for this project and any feedback or comment for improvment is warmly welcome.
+This is the first iteration for this project and any feedback or comment for improvement is warmly welcome.
 
 The next step for this project is to connect it to a blogging platforms or even explore more features of Gatsby and create a blog post template.
 
