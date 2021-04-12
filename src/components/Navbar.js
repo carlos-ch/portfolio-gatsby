@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import logoBlack from "../assets/logo_black.svg"
+import logoNav from "../assets/logo_double.svg"
 import Sidebar from "./Sidebar"
 import PageLinks from "../constants/links"
 import Media from "react-media"
@@ -20,7 +20,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="nav-center">
-        <img src={logoBlack} alt="logo" />
+        <img src={logoNav} alt="logo" />
         <Media queries={{ small: { maxWidth: 800 } }}>
           {matches =>
             matches.small ? null : <PageLinks styleClass="no-sidebar" />
